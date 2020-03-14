@@ -22,4 +22,12 @@ class ItemTest extends TestCase
 
         $this->assertSame('hello', $item->hello());
     }
+
+    /** @test */
+    public function it_can_say_hello_from_routes_web()
+    {
+        $this->get('hello')
+            ->assertStatus(200)
+            ->assertSee('hello');
+    }
 }
