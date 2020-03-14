@@ -16,5 +16,12 @@
         "psr-4": {
             "Nelisys\\LaravelPackage\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nelisys\\LaravelPackage\\ItemServiceProvider"
+            ]
+        }
     }
 }
